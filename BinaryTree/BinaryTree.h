@@ -23,7 +23,7 @@ class BST{
     void deleteNode(Node*& currentNode);
     void getSucessor(Student& studentSucessor, Node* temp);
     void push(Student student);
-    void search(Student& student, bool search);
+    void search(Student& student, bool& search);
     void preOrder(Node* currentNode);
     void order(Node* currentNode);
     void postOrder(Node* currentNode);

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstddef>
-#include "BinaryTree.h"
+#include "binaryTree.h"
 
 using namespace std;
 
@@ -10,10 +10,20 @@ using namespace std;
     }
 
     BST::~BST()
-    {}
+    {
+        deleteTree(source);
+    }
 
     void BST::deleteTree(Node* currentNode)
-    {}
+    {
+        if (currentNode != NULL){
+            deleteTree(currentNode->leftSun);
+            deleteTree(currentNode->rightSun);
+
+            delete currentNode;
+        }
+        
+    }
 
     Node* BST::getSrc()
     {
@@ -127,7 +137,7 @@ using namespace std;
         studentSucessor = temp->Student;
     }
 
-    void BST::search(Student& student, bool search)
+    void BST::search(Student& student, bool& search)
     {
         search = false;
         Node* currentNode = source;
@@ -147,7 +157,40 @@ using namespace std;
     }
 
     void BST::preOrder(Node* currentNode)
-    {}  
+    {
+        if (currentNode != NULL){
+            cout << currentNode->Student.getName() << " : ";
+            cout << currentNode->Student.getId() << endl;
+
+            preOrder(currentNode->leftSun);
+            preOrder(currentNode->rightSun);
+
+        }
+        
+    }  
+    
+    void BST::order(Node* currentNode)
+    {
+        if (currentNode != NULL)
+        {
+            order(currentNode->leftSun);
+        
+            cout << currentNode->Student.getName() << " : ";
+            cout << currentNode->Student.getId() << endl;
+
+            order(currentNode->rightSun);
+        }
+        
+    }
 
     void BST::postOrder(Node* currentNode)
-    {}
+    {
+        if (currentNode != NULL){
+            postOrder(currentNode->leftSun);
+            postOrder(currentNode->rightSun);
+
+            cout << currentNode->Student.getName() << " : ";
+            cout << currentNode->Student.getId() << endl;
+        }
+        
+    }
