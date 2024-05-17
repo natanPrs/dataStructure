@@ -47,7 +47,7 @@ Special thank you for all people that contributed for this project.
   <tr>
     <td align="center">
       <a href="https://github.com/natanPrs">
-        <img src="https://cdn.discordapp.com/attachments/899945580384645200/1235009706247061586/natanBtm.jpg?ex=6640a7ab&is=663f562b&hm=78b4dc92470bd0e5a284e4f444fc73ca4ff4f7363d698974808e893766cd3e26&" width="100px;" alt="natanPrs Profile Picture"/><br>
+        <img src="./Utils/PerfilImg/natanBtm.jpg" width="100px;" alt="natanPrs Profile Picture"/><br>
         <sub>
           <b>Natan Pires</b>
         </sub>
