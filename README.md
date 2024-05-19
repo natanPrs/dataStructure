@@ -41,7 +41,7 @@ change the "respective structures" to the names of the structures you want to ex
 
 <h2 id="colab">🤝 Collaborators</h2>
 
-Special thank you for all people that contributed for this project.
+Special thank you for all people that contributed for this project
 
 <table>
   <tr>
